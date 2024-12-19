@@ -51,3 +51,7 @@ let objData = {
 //   const elem = objData[k];
 //   console.log(elem);
 // }
+
+for (let i = 0; i < 5; i++) {
+  console.log(i);
+}
