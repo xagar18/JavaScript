@@ -3,7 +3,6 @@ const pusharray = [1, 2, 3, 4, 5];
 pusharray.push(6); // [1, 2, 3, 4, 5, 6]
 pusharray.push(7, 8, 9); // [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-
 // array pop
 const poparray = [1, 2, 3, 4, 5];
 poparray.pop(); // [1, 2, 3, 4]
@@ -61,48 +60,78 @@ includesarray.includes(6); // false
 
 // array find
 const findarray = [1, 2, 3, 4, 5];
-findarray.find(x => x > 2); // 3 // find first element that is greater than 2
-findarray.find(x => x > 5); // undefined
+findarray.find((x) => {
+  return x > 2;
+}); // 3 // find first element that is greater than 2
+findarray.find((x) => {
+  return x > 5;
+}); // undefined
 
 // array findIndex
 const findIndexarray = [1, 2, 3, 4, 5];
-findIndexarray.findIndex(x => x > 2); // 2 // find index of first element that is greater than 2
-findIndexarray.findIndex(x => x > 5); // -1
+findIndexarray.findIndex((x) => {
+  return x > 2;
+}); // 2 // find index of first element that is greater than 2
+findIndexarray.findIndex((x) => {
+  return x > 5;
+}); // -1
 
 // array filter
 const filterarray = [1, 2, 3, 4, 5];
-filterarray.filter(x => x > 2); // [3, 4, 5] // filter elements that are greater than 2
-filterarray.filter(x => x > 5); // []
+filterarray.filter((x) => {
+  return x > 2;
+}); // [3, 4, 5] // filter elements that are greater than 2
+filterarray.filter((x) => {
+  return x > 5;
+}); // []
 
 // array map
 const maparray = [1, 2, 3, 4, 5];
-maparray.map(x => x * 2); // [2, 4, 6, 8, 10] // double each element
-maparray.map(x => x * x); // [1, 4, 9, 16, 25] // square each element
+maparray.map((x) => {
+  return x * 2;
+}); // [2, 4, 6, 8, 10] // double each element
+maparray.map((x) => {
+  return x * x;
+}); // [1, 4, 9, 16, 25] // square each element
 
 // array reduce
 const reducearray = [1, 2, 3, 4, 5];
-reducearray.reduce((acc, x) => acc + x, 0); // 15 // sum of all elements
-reducearray.reduce((acc, x) => acc * x, 1); // 120 // product of all elements
+reducearray.reduce((acc, x) => {
+  return acc + x;
+}, 0); // 15 // sum of all elements
+reducearray.reduce((acc, x) => {
+  return acc * x;
+}, 1); // 120 // product of all elements
 
 // array every
 const everyarray = [1, 2, 3, 4, 5];
-everyarray.every(x => x > 0); // true // all elements are greater than 0
-everyarray.every(x => x > 2); // false // not all elements are greater than 2
+everyarray.every((x) => {
+  return x > 0;
+}); // true // all elements are greater than 0
+everyarray.every((x) => {
+  return x > 2;
+}); // false // not all elements are greater than 2
 
 // array some
-const somearray = [1, 2, 3, 4, 5]; 
-somearray.some(x => x > 2); // true // some elements are greater than 2
-somearray.some(x => x > 5); // false // no elements are greater than 5
+const somearray = [1, 2, 3, 4, 5];
+somearray.some((x) => {
+  return x > 2;
+}); // true // some elements are greater than 2
+somearray.some((x) => {
+  return x > 5;
+}); // false // no elements are greater than 5
 
 // array forEach
 const forEacharray = [1, 2, 3, 4, 5];
-forEacharray.forEach(x => console.log(x)); // 1 2 3 4 5
+forEacharray.forEach((x) => {
+  console.log(x);
+}); // 1 2 3 4 5
 
 // array join
 const joinarray = [1, 2, 3, 4, 5];
 joinarray.join(); // "1,2,3,4,5"
-joinarray.join(''); // "12345"
-joinarray.join('-'); // "1-2-3-4-5"
+joinarray.join(""); // "12345"
+joinarray.join("-"); // "1-2-3-4-5"
 
 // array toString
 const toStringarray = [1, 2, 3, 4, 5];
@@ -113,4 +142,3 @@ const fillarray = [1, 2, 3, 4, 5];
 fillarray.fill(0); // [0, 0, 0, 0, 0]
 fillarray.fill(0, 2); // [1, 2, 0, 0, 0] // fill with 0 starting from index 2
 fillarray.fill(0, 2, 4); // [1, 2, 0, 0, 5] // fill with 0 from index 2 to 4
-
