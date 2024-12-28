@@ -39,3 +39,11 @@ const words1 = newval1.split(","); // ["sagar", "yadav", "sagar"]
 const newval2 = "    sagar yadav   ";
 const newval3 = newval2.trim();
 console.log(newval3);
+
+// string to array
+const newval4 = "sagar yadav";
+const newval5 = newval4.split("");
+console.log(newval5); // ["s", "a", "g", "a", "r", " ", "y", "a", "d", "a", "v"]
+
+
+
