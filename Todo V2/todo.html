@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <link rel="stylesheet" href="todo.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="sildebar">
+        <div class="appname">
+          <h2 class="name">Todo App</h2>
+        </div>
+        <div class="dashboard">
+          <ul id="slidecategory" class="highlighter">
+            <li><i class="ri-home-3-line dashicon"></i> Dashboard</li>
+            <li><i class="ri-task-line taskicon"></i>My Task</li>
+            <li><i class="ri-calendar-todo-line calicon"></i>Calendar</li>
+            <li><i class="ri-refresh-line syncicon"></i>Sync Task</li>
+            <li><i class="ri-focus-mode focusicon"></i>Focus Mode</li>
+          </ul>
+          <ul id="slideproject">
+            <li><i class="ri-user-6-line pertaskicon"></i>Personal Tasks</li>
+            <li><i class="ri-graduation-cap-line studyicon"></i>Study Plan</li>
+            <li>
+              <i class="ri-checkbox-circle-line compicon"></i>Completed Tasks
+            </li>
+            <li><i class="ri-star-line impicon"></i>Important Tasks</li>
+          </ul>
+          <div class="mode">
+            <i class="ri-moon-line dark darkicon"></i>
+            <i class="ri-sun-line light lighticon"></i>
+          </div>
+          <div class="slidefotter">
+            <div class="taskadddiv">
+              <h2>Don't have any <br />new task?</h2>
+              <button class="createnew">+&nbsp;&nbsp;Create New</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rightcontent">
+        <nav class="navbar">
+          <div class="searchbox">
+            <input
+              type="search"
+              class="searchb"
+              id="searchbox"
+              placeholder="Keywords"
+            />
+            <i class="ri-search-line" id="searchicon"></i>
+          </div>
+          <div class="buttonarea">
+            <button class="addtaskbtn">
+              +&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add New Task
+            </button>
+            <i class="ri-notification-line bell"></i>
+            <i class="ri-user-line user"></i>
+          </div>
+        </nav>
+        <div class="projectinfo">
+          <div class="leftinfo">
+            <h2>Test</h2>
+            <h3>To-Do List</h3>
+          </div>
+          <div class="rightinfo">
+            <i class="ri-group-line group"></i>
+            <button id="addmember" class="addmember">
+              +&nbsp;&nbsp;&nbsp; Add New Member
+            </button>
+          </div>
+        </div>
+        <div class="maincontent">
+          <div class="contnav">
+            <div class="leftcontnav">
+              <h3>Board</h3>
+              <h3>Timeline</h3>
+              <h3>List</h3>
+              <h3>Activity</h3>
+            </div>
+            <div class="rightcontnav">
+              <i class="ri-filter-line filter"></i>
+              <h3>Filter</h3>
+            </div>
+          </div>
+          <div class="centercontent">
+            <div class="Today">
+              <div class="navtoday">
+                <div class="todayh3">
+                  Today<i class="ri-more-2-fill todayicon"></i>
+                </div>
+              </div>
+              <div class="todaycontent">
+                <div class="todayitems">
+                  <ul class="todayulitems">
+                    <li class="todayultitle">Title</li>
+                    <li class="todayulshortdis">
+                      Lorem ipsum dolor sit amet consectetur adipisicing.
+                    </li>
+                    <li class="todayuuldate">3 Days Ago</li>
+                  </ul>
+
+                  <ul class="todayulitems">
+                    <li class="todayultitle">Title</li>
+                    <li class="todayulshortdis">
+                      Lorem ipsum dolor sit amet consectetur adipisicing.
+                    </li>
+                    <li class="todayuuldate">3 Days Ago</li>
+                  </ul>
+                  <ul class="todayulitems">
+                    <li class="todayultitle">Title</li>
+                    <li class="todayulshortdis">
+                      Lorem ipsum dolor sit amet consectetur adipisicing.
+                    </li>
+                    <li class="todayuldate">3 Days Ago</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tom start -->
+            <div class="Tomorrow">
+              <div class="navtomorrow">
+                <div class="tomorrowh3">
+                  Tomorrow<i class="ri-more-2-fill tomorrowicon"></i>
+                </div>
+              </div>
+              <div class="tomorrowcontent">
+                <div class="tomorrowcontent">
+                  <div class="tomorrowitems">
+                    <ul class="tomorrowulitems">
+                      <li class="tomorrowultitle">Title</li>
+                      <li class="tomorrowulshortdis">
+                        Lorem ipsum dolor sit amet consectetur adipisicing.
+                      </li>
+                      <li class="tomorrowuuldate">3 Days Ago</li>
+                    </ul>
+                    <ul class="tomorrowulitems">
+                      <li class="tomorrowultitle">Title</li>
+                      <li class="tomorrowulshortdis">
+                        Lorem ipsum dolor sit amet consectetur adipisicing.
+                      </li>
+                      <li class="tomorrowuldate">3 Days Ago</li>
+                    </ul>
+                    <ul class="tomorrowulitems">
+                      <li class="tomorrowultitle">Title</li>
+                      <li class="tomorrowulshortdis">
+                        Lorem ipsum dolor sit amet consectetur adipisicing.
+                      </li>
+                      <li class="tomorrowuldate">3 Days Ago</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="Later">
+              <div class="navlater">
+                <div class="laterh3">
+                  Later <i class="ri-more-2-fill latericon"></i>
+                </div>
+              </div>
+              <div class="latercontent">
+                <div class="latercontent">
+                  <div class="lateritems">
+                    <ul class="laterulitems">
+                      <li class="laterultitle">Title</li>
+                      <li class="laterulshortdis">
+                        Lorem ipsum dolor sit amet consectetur adipisicing.
+                      </li>
+                      <li class="lateruldate">3 Days Ago</li>
+                    </ul>
+                    <ul class="laterulitems">
+                      <li class="laterultitle">Title</li>
+                      <li class="laterulshortdis">
+                        Lorem ipsum dolor sit amet consectetur adipisicing.
+                      </li>
+                      <li class="lateruldate">3 Days Ago</li>
+                    </ul>
+                    <ul class="laterulitems">
+                      <li class="laterultitle">Title</li>
+                      <li class="laterulshortdis">
+                        Lorem ipsum dolor sit amet consectetur adipisicing.
+                      </li>
+                      <li class="lateruldate">3 Days Ago</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="New">
+              <div class="navnew">
+                <div class="newh3">
+                  New<i class="ri-more-2-fill newicon"></i>
+                </div>
+              </div>
+              <div class="newcontent">
+                <div class="newcontent">
+                  <div class="newitems">
+                    <ul class="newulitems">
+                      <li class="newultitle">Title</li>
+                      <li class="newulshortdis">
+                        Lorem ipsum dolor sit amet consectetur adipisicing.
+                      </li>
+                      <li class="newuldate">3 Days Ago</li>
+                    </ul>
+                    <ul class="newulitems">
+                      <li class="newultitle">Title</li>
+                      <li class="newulshortdis">
+                        Lorem ipsum dolor sit amet consectetur adipisicing.
+                      </li>
+                      <li class="newuldate">3 Days Ago</li>
+                    </ul>
+                    <ul class="newulitems">
+                      <li class="newultitle">Title</li>
+                      <li class="newulshortdis">
+                        Lorem ipsum dolor sit amet consectetur adipisicing.
+                      </li>
+                      <li class="newuldate">3 Days Ago</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+
+    <!-- Modal -->
+    <div id="taskModal" class="modal">
+      <div class="modalContent">
+        <span class="closeButton">&times;</span>
+        <h2 class="modalTitle">Add New Task</h2>
+        <div class="taskForm">
+          <div class="inputGroup">
+            <input
+              type="text"
+              id="taskTitle"
+              name="taskTitle"
+              placeholder="Title"
+              required
+            />
+          </div>
+
+          <div class="inputGroup">
+            <textarea
+              id="taskDescription"
+              name="taskDescription"
+              placeholder="Notes"
+              required
+            ></textarea>
+          </div>
+
+          <div class="inputGroup">
+            <label for="taskDate">Due Date</label>
+            <div id="dateOptions" class="dateOptions">
+              <button type="button" class="dateOption" data-date="today">
+                Today
+              </button>
+              <button type="button" class="dateOption" data-date="tomorrow">
+                Tomorrow
+              </button>
+              <button type="button" class="dateOption" data-date="custom">
+                Choose Date
+              </button>
+              <input
+                type="date"
+                id="taskDate"
+                name="taskDate"
+                style="display: none"
+                required
+              />
+            </div>
+          </div>
+
+          <p id="selectedDate" class="selectedDate"></p>
+
+          <button type="submit" class="addTaskButton">Add Task</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="todo.js"></script>
+  </body>
+</html>
