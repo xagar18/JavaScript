@@ -1,5 +1,5 @@
 // array push
-const pusharray = [1, 2, 3, 4, 5];
+const pusharray = [1, 2, 3, 4, 5,6];
 pusharray.push(6); // [1, 2, 3, 4, 5, 6]
 pusharray.push(7, 8, 9); // [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
